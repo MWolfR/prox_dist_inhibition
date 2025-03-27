@@ -1,23 +1,21 @@
 {
-    "name": "Count proximal vs. distal dendritic length",
+    "name": "Compare proximal and distal inhibition",
     "authors": ["OBI", "Michael W. Reimann"],
-    "description": "This analysis how much dendritic length of a reconstructed morphology lies between specified path distance cutoffs.",
+    "description": "This analysis compares the effect of proximal and distal inhibition on spike counts.",
     "scale": "cellular",
     "type": "notebook",
     "kernel": "python",
     "input": [
         {
             "data_type": {
-                "artefact": "morphology",
+                "artefact": "SingleCellSimulation",
                 "required_properties": []
             },
-            "class": "single"
+            "class": "multiple"
         }
     ],
     "requirements": [
         "pandas>=2.0.1",
-        "neurom>=3.2.2",
-        "ipywidgets>=8.1.0",
         "matplotlib>=3.7.1"
     ]
 }
